@@ -1,6 +1,6 @@
 package com.example.weatherforecast.data
 
-import com.example.weatherforecast.data.response.CurrentWeatherResponse
+import com.example.weatherforecast.data.network.response.CurrentWeatherResponse
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import kotlinx.coroutines.Deferred
 import okhttp3.Interceptor
@@ -51,5 +51,4 @@ interface ApixuWeatherAPIService {
                 .create(ApixuWeatherAPIService::class.java)
         }
     }
-
 }
